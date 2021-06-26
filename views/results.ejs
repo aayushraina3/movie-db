@@ -1,0 +1,18 @@
+<%- include("partials/header") %>
+
+    <div class="row align-items-center movie-cards">
+        <% results.forEach((result) => { %>
+            <div class="movie-cards-individual">
+                <div class="card card-results">
+                    <img class="card-img-top card-img-top-results" src="<%= result.Poster %>" alt="<%= result.Title %>">
+                    <div class="card-body card-body-results">
+                        <h4><%= result.Title %></h4>
+                        <a href="results/<%= result.imdbID %>">Details</a>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+
+<%- include("partials/footer") %>

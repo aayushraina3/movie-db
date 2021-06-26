@@ -1,0 +1,33 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-results {
+    width: 18rem;
+}
+
+.card-img-top-results {
+    height: 24rem;
+}
+
+.card-body-results {
+    height: 10rem;
+}
+
+.movie-cards {
+    margin: auto;
+}
+
+.movie-cards-individual {
+    margin: 1rem auto;
+}
+
+.h1-search {
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 25px;
+}
+
+.search-poster {
+    border: 0.5px solid rgb(95, 95, 95);
+    border-radius: 5px;
+}

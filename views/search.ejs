@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+
+    
+    <div class="row movie-cards">
+        <div class="col-sm">
+            <h1 class="h1-search"><%= result.Title %></h1>
+            <div class="card bg-light mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">IMDB Rating: <%= result.imdbRating %></h5>
+                    <p>Release Date: <%= result.Released %></p>
+                    <p>Rated: <%= result.Rated %></p>
+                    <p>Language: <%= result.Language %></p>
+                    <p>Genre: <%= result.Genre %></p>
+                    <p>Actors: <%= result.Actors %></p>
+                    <p>Director: <%= result.Director %></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm" style="text-align: center;">
+            <img class="search-poster" src="<%= result.Poster %>" alt="<%= result.Title %>">
+        </div>
+    </div>
+    <div class="row movie-cards-individual">
+        <div class="col-sm">
+            <strong>Plot:</strong> <%= result.Plot %>
+        </div>
+    </div>
+    
+
+<%- include("partials/footer") %>
